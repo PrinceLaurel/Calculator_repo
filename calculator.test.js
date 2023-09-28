@@ -24,8 +24,11 @@ describe('division av 6 från 120 ska vara 20', () => {
         expect(calculate(120, 6, 'divide')).toEqual(20);
     });
 });
-test ('3 / 0 = not defined', () => {
-expect(calculate(3, 0, 'divide')).toBe("not defined");
-});
+describe('division av 0 från 3 ska vara not defined', () => {
+    test ('3 / 0 = not defined', () => {
+        expect(calculate(3, 0, 'divide')).toBe("not defined")
+    })
+})
+
 
 
